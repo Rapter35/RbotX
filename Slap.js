@@ -1,7 +1,3 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const { prefix, token } = require('./lgn.json');
-
 client.on('message', async msg => {
 	if (msg.content.startsWith(`${prefix}slap`)) {
 		const Slapped = msg.mentions.users.first()
